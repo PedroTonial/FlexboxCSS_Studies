@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* -----------------HEADER----------------------*/
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(20, 19, 19);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.headerbtns {
+  display: flex;
+  gap: 20px;
+}
+#logo-onebitcode {
+  width: 180px;
+}
+.navbtn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 15px;
+}
+.navbtn:hover {
+  border-bottom: 2px solid black;
+  border-right: 1px solid black;
+}
+/* -------------------TÍTULOS--------------*/
+.section_title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid rgb(35, 35, 37) 2px;
+}
+.section_description {
+  text-align: center;
+  color: rgb(35, 35, 37);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+/* -------------------MAIN CONTENT--------------*/
+.grid_container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "main sidebar";
+  gap: 20px;
+  flex: 1 0 auto;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-area: main;
+  gap: 10px;
+}
+.mainCard {
+  width: 280px;
+  height: 380px;
+  border: solid 2px transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 1px;
+}
+.mainCard:hover {
+  border-color: black;
+}
+.maincard_img {
+  width: 100%;
+  border-radius: 10px;
+}
+.maincard_title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.maincard_description {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  min-width: 300px;
+  padding: 15px;
+  background-color: black;
+  border-radius: 5px;
+  grid-area: sidebar;
+  gap: 20px;
+}
+.sideCard {
+  border: 2px transparent solid;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sidebar_title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+.sidecard_img {
+  width: 100%;
+  border-radius: 10px;
+}
+.sideCard:hover {
+  border: 2px white solid;
+}
+/* -------------------FOOTER--------------*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  background-color: rgb(20, 19, 19);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-top: 10px;
+}
+#logo-onebitcode_footer {
+  width: 180px;
+}
+#footer_anchor {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
